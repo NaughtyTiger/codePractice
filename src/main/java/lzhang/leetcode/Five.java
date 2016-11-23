@@ -19,6 +19,7 @@ public class Five {
     return s.substring(left+1,right);
   }
   
+  @SuppressWarnings("unused")
   private String cppWayOne(String s){
     int n=s.length();
     if (n<=1) return s;

@@ -1,11 +1,6 @@
 package lzhang.leetcode;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
 
 /*
  * http://blog.csdn.net/yukuninfoaxiom/article/details/6057736
@@ -41,10 +36,8 @@ public class Ten {
     }
     return dp[s.length()][p.length()];
   }
-  
-  
-  
 
+  @SuppressWarnings("unused")
   private void method2(String s, String p) {
     State startState=new State();
     end=createStates(startState, p);
@@ -116,6 +109,7 @@ public class Ten {
     }
   }
   
+  @SuppressWarnings("unused")
   private boolean method1(String s, String p) {
     if (p.equals("") && s.equals("")){
       return true;
