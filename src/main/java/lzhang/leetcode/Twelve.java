@@ -135,11 +135,11 @@ public class Twelve {
   }
 
   private String method1(int num) {
-    String result="";
+    StringBuilder result=new StringBuilder();
     int thousand=num/1000;
     num=num-thousand*1000;
     for (int i=0; i<thousand; i++){
-      result+="M";
+      result.append("M");
     }
     
     int hundred=num/100;
@@ -148,31 +148,31 @@ public class Twelve {
     case 0:
       break;
     case 1:
-      result+="C";
+      result.append("C");
       break;
     case 2:
-      result+="CC";
+      result.append("CC");
       break;
     case 3:
-      result+="CCC";
+      result.append("CCC");
       break;
     case 4:
-      result+="CD";
+      result.append("CD");
       break;
     case 5:
-      result+="D";
+      result.append("D");
       break;
     case 6:
-      result+="DC";
+      result.append("DC");
       break;
     case 7:
-      result+="DCC";
+      result.append("DCC");
       break;
     case 8:
-      result+="DCCC";
+      result.append("DCCC");
       break;
     case 9:
-      result+="CM";
+      result.append("CM");
       break;
     }
     
@@ -183,31 +183,31 @@ public class Twelve {
     case 0:
       break;
     case 1:
-      result+="X";
+      result.append("X");
       break;
     case 2:
-      result+="XX";
+      result.append("XX");
       break;
     case 3:
-      result+="XXX";
+      result.append("XXX");
       break;
     case 4:
-      result+="XL";
+      result.append("XL");
       break;
     case 5:
-      result+="L";
+      result.append("L");
       break;
     case 6:
-      result+="LX";
+      result.append("LX");
       break;
     case 7:
-      result+="LXX";
+      result.append("LXX");
       break;
     case 8:
-      result+="LXXX";
+      result.append("LXXX");
       break;
     case 9:
-      result+="XC";
+      result.append("XC");
       break;
     }
     
@@ -215,34 +215,34 @@ public class Twelve {
     case 0:
       break;
     case 1:
-      result+="I";
+      result.append("I");
       break;
     case 2:
-      result+="II";
+      result.append("II");
       break;
     case 3:
-      result+="III";
+      result.append("III");
       break;
     case 4:
-      result+="IV";
+      result.append("IV");
       break;
     case 5:
-      result+="V";
+      result.append("V");
       break;
     case 6:
-      result+="VI";
+      result.append("VI");
       break;
     case 7:
-      result+="VII";
+      result.append("VII");
       break;
     case 8:
-      result+="VIII";
+      result.append("VIII");
       break;
     case 9:
-      result+="IX";
+      result.append("IX");
       break;
     }
     
-    return result;
+    return result.toString();
   }
 }
