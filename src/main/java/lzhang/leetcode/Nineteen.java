@@ -17,11 +17,5 @@ public class Nineteen {
     before.next=before.next.next;
     return head;
   }
-
-  private class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
-  }
 }
 
