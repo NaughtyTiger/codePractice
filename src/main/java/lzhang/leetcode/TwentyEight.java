@@ -1,4 +1,4 @@
-pckage lzhang.leetcode;
+package lzhang.leetcode;
 
 public class TwentyEight {
   public int strStr(String haystack, String needle){
