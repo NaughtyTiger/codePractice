@@ -21,7 +21,8 @@ public class Four {
           +getPosition(middleIndex+1, numsLong, numsShort))/2;
     }
   }
-  public double getTwoPosition(int middleIndex, int[] numsLong, int[] numsShort) {
+
+  private double getTwoPosition(int middleIndex, int[] numsLong, int[] numsShort) {
     int position[]=new int[numsLong.length];
     int middle=Integer.MAX_VALUE;
     int middlePlus=Integer.MAX_VALUE;
