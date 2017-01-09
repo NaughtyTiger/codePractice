@@ -20,6 +20,7 @@ public class TwentyThree {
       }
       ListNode[] newList=new ListNode[(lists.length+1)/2];
       int i=0;
+      System.out.println(lists.length);
       for (;i<lists.length/2;i++){
         ListNode first=lists[i*2];
         ListNode second=lists[i*2+1];
